@@ -7,6 +7,6 @@ client = OpenAI(
 with client.audio.speech.with_streaming_response.create(
     model="kokoro",
     voice="af_sky+af_bella", #single or multiple voicepack combo
-    input="Hello world!"
+    input="LaBron Jaaames!"
   ) as response:
       response.stream_to_file("output.mp3")
